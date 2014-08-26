@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="CSDNSplider" />
+        <module name="slidingmenu" />
       </profile>
     </annotationProcessing>
   </component>
