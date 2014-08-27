@@ -16,7 +16,7 @@ public class DrawerView {
 
     public SlidingMenu initSlidingMenu() {
         slidingMenu = new SlidingMenu(activity);
-        slidingMenu.setMode(SlidingMenu.LEFT_RIGHT);
+        slidingMenu.setMode(SlidingMenu.LEFT);
         slidingMenu.setTouchModeAbove(SlidingMenu.SLIDING_WINDOW);
         slidingMenu.setTouchModeBehind(SlidingMenu.RIGHT);
         slidingMenu.setShadowWidthRes(R.dimen.shadow_width);
