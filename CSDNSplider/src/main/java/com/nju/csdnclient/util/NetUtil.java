@@ -33,7 +33,6 @@ public class NetUtil {
 
                 while ((length = inputStream.read(buf)) != -1) {
                     buffer.append(new String(buf, 0 , length, "UTF-8"));
-                    System.out.println(new String(buf, 0 , length, "UTF-8"));
                     buf = new byte[1024];
                 }
 
