@@ -1,15 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:background="@color/left_drawer_background"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
-       <TextView android:layout_width="fill_parent"
-                 android:layout_height="fill_parent"
-                 android:text="@string/app_name"/>
-    <LinearLayout android:layout_width="fill_parent"
-                  android:layout_height="fill_parent">
-
-    </LinearLayout>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:csdn = "http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="@color/left_drawer_background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- discovery button -->
+            <RelativeLayout
+                android:id="@+id/discovery_btn"
+                style="@style/left_drawer_item_layout">
+                <TextView
+                    style="@style/left_drawer_item_text"
+                    android:drawableLeft="@drawable/left_drawer_item_discovery"
+                    android:text="@string/left_drawer_item_discovery"/>
+            </RelativeLayout>
+            <ImageView style="@style/left_drawer_item_line"/>
+            <!-- favorite button -->
+            <RelativeLayout
+                    android:id="@+id/favorite_btn"
+                    style="@style/left_drawer_item_layout">
+                <TextView
+                        style="@style/left_drawer_item_text"
+                        android:drawableLeft="@drawable/left_drawer_item_favorite"
+                        android:text="@string/left_drawer_item_favorite"/>
+            </RelativeLayout>
+            <ImageView style="@style/left_drawer_item_line"/>
+            <!-- setting button -->
+            <RelativeLayout
+                    android:id="@+id/setting_btn"
+                    style="@style/left_drawer_item_layout"
+                    android:clickable="true">
+                <TextView
+                        style="@style/left_drawer_item_text"
+                        android:drawableLeft="@drawable/left_drawer_item_setting"
+                        android:text="@string/left_drawer_item_setting"/>
+            </RelativeLayout>
+            <ImageView style="@style/left_drawer_item_line"/>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

@@ -2,4 +2,7 @@
 <resources>
     <dimen name="shadow_width">15dip</dimen>
     <dimen name="slidingmenu_offset">50dip</dimen>
+    <dimen name="drawer_item_img_offset">50dip</dimen>
+    <dimen name="drawer_item_text_offset">50dip</dimen>
+
 </resources>

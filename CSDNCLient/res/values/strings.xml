@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CSDNCLient</string>
+    <string name="left_drawer_item_discovery">发现</string>
+    <string name="left_drawer_item_favorite">收藏</string>
+    <string name="left_drawer_item_setting">设置</string>
 </resources>
